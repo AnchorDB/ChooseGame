@@ -1,0 +1,76 @@
+body {
+    background: #FFFBDF;
+}
+
+.navbar {
+    margin-bottom: 2rem;
+    border: 1px solid black;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.navbar-brand {
+    font-size: 40px;
+    font-family: Georgia, sans-serif;
+}
+
+.nav-link {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+h1 {
+    font-family: Georgia, sans-serif;
+    font-size: 5em;
+    letter-spacing: -2px;
+    text-align: center;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+ 
+span {
+    margin: 10px 10px;
+}
+
+#playBtn {
+    display: inline-block;
+    margin-left: 46%;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: #e9c7ff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+#playBtn:hover {
+    background: rgb(241, 223, 248);
+}
+
+#playBtn:active {
+    box-shadow: 0 5px #666;
+  }
+
+div {
+    padding: 10px;
+    text-align: center;
+    font-size: 40px;
+}
+
+#divOne {
+    padding-bottom: 0px;
+}
+
+#game {
+    font-family: "Arial Black", sans-serif;
+    font-size: 1.5em;
+    color: #34656D;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    border-spacing: 5px;
+}

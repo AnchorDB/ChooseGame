@@ -1,0 +1,124 @@
+body {
+    background: #FFFBDF;
+}
+
+.navbar {
+    margin-bottom: 2rem;
+    border: 1px solid black;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.navbar-brand {
+    font-size: 40px;
+    font-family: Georgia, sans-serif;
+}
+
+.nav-link {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#h1 {
+    font-family: Georgia, sans-serif;
+    font-size: 5em;
+    text-align: center;
+    text-shadow: 2.5px 2.5px rgba(0,0,0,.1)
+}
+
+.container-fluid {
+    background-color: #C6FFC1;
+    padding: 40px 0px;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 24px;
+}
+ 
+span {
+    margin: 10px 10px;
+}
+
+input[type=text] {
+    padding: 15px 25px;
+    font-size: 24px;
+}
+
+@media (max-width: 600px) {
+    input[type=text] {
+        padding: 5px 10px;
+        font-size: 20px;
+    }
+
+    #h1 {
+        font-size: 3em;
+    }
+}
+
+#playBtn {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: #e9c7ff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgba(0,0,0,0.19);
+}
+
+@media (max-width: 800px) {
+    #playBtn {
+        margin-top: 15px;
+    }
+}
+
+#playBtn:hover {
+    background: rgb(241, 223, 248);
+}
+
+#playBtn:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+div {
+    padding: 10px;
+    text-align: center;
+    font-size: 40px;
+}
+
+#top-div {
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 60%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+#mid-div {
+    margin: 30px 0px;
+}
+
+#bot-div {
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 60%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    overflow-wrap: break-word;
+    margin-bottom: 80px;
+}
+
+#game {
+    font-family: "Arial Black", sans-serif;
+    font-size: 1.5em;
+    color: #34656D;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    border-spacing: 5px;
+
+}
+
+.game-list {
+    list-style: none;
+}
