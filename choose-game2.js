@@ -1,8 +1,9 @@
 let gameList = [];
 
-function chooseGame() {
+function chooseGame(e) {
     const randomGame = gameList[Math.floor(Math.random() * gameList.length)];
     document.getElementById("game").innerHTML = randomGame
+    e.preventDefault;
 }
 
 function addGame() {
