@@ -1,13 +1,17 @@
 let gameList = [];
 
-function chooseGame(e) {
-    const randomGame = gameList[Math.floor(Math.random() * gameList.length)];
-    document.getElementById("game").innerHTML = randomGame
-    e.preventDefault;
-}
+document.getElementById('formSubmit').addEventListener('submit', addGame);
 
-function addGame() {
+function addGame(e) {
    games = document.getElementById("gameToAdd").value;
    gameList.push(games);
-   return false;
+   e.preventDefault();
 }
+
+function chooseGame() {
+    const randomGame = gameList[Math.floor(Math.random() * gameList.length)];
+    document.getElementById("game").innerHTML = randomGame
+}
+
+
+console.log(gameList);
