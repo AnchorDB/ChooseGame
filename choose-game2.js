@@ -1,8 +1,10 @@
 let gameList = [];
 let gameToAdd = document.getElementById("gameToAdd");
-// added event listener to form submit
+
+// added event listener to form submit, new list submit
 
 document.getElementById('formSubmit').addEventListener('submit', addGame);
+document.querySelector('#reloadPage').addEventListener('mousedown', reloadList);
 
 // add submitted game to games array
 
@@ -19,5 +21,8 @@ function chooseGame() {
     document.getElementById("game").innerHTML = randomGame;
 }
 
+// create new List
 
-console.log(gameList);
+function reloadList(){
+    window.location.reload();
+}
