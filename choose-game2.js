@@ -1,5 +1,5 @@
 let gameList = [];
-
+let gameToAdd = document.getElementById("gameToAdd");
 // added event listener to form submit
 
 document.getElementById('formSubmit').addEventListener('submit', addGame);
@@ -7,8 +7,8 @@ document.getElementById('formSubmit').addEventListener('submit', addGame);
 // add submitted game to games array
 
 function addGame(e) {
-   games = document.getElementById("gameToAdd").value;
-   gameList.push(games);
+   gameList.push(gameToAdd.value);
+   gameToAdd.value = '';
    e.preventDefault();
 }
 
@@ -16,7 +16,7 @@ function addGame(e) {
 
 function chooseGame() {
     const randomGame = gameList[Math.floor(Math.random() * gameList.length)];
-    document.getElementById("game").innerHTML = randomGame
+    document.getElementById("game").innerHTML = randomGame;
 }
 
 
