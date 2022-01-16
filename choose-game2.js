@@ -24,6 +24,10 @@ class GameList {
                 500);
         } else {
             submittedGame.innerHTML = "Please Enter a Game Above";
+
+            setTimeout(function(){
+                return submittedGame.innerHTML = " ";
+            }, 2000);
         }
     }   
 
