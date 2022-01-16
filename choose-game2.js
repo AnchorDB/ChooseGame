@@ -1,8 +1,20 @@
 //variables
 
-let gameList = [];
+class GameList {
+    constructor(gameList = []) {
+        this.gameList = gameList;
+    } 
+
+    // addGame(e) {
+    //     const gameList = new GameList;
+    //     gameList.push(gameToAdd.value);
+    //     gameToAdd.value = '';
+    //     e.preventDefault();
+    //  }
+}
 let gameToAdd = document.getElementById("gameToAdd");
 let submittedGame = document.getElementById("game");
+const games = new GameList([]);
 
 // added event listener to form submit, new list submit
 
@@ -12,7 +24,7 @@ document.querySelector('#reloadPage').addEventListener('mousedown', reloadList);
 // add submitted game to games array
 
 function addGame(e) {
-   gameList.push(gameToAdd.value);
+   games.gameList.push(gameToAdd.value);
    gameToAdd.value = '';
    e.preventDefault();
 }
@@ -20,10 +32,10 @@ function addGame(e) {
 // choose random game from gamelist array
 
 function chooseGame() {
-    let randomGame = gameList[Math.floor(Math.random() * gameList.length)];
+    let randomGame = games.gameList[Math.floor(Math.random() * games.gameList.length)];
 
     // check if game has been entered
-    if (gameList.length !== 0){
+    if (games.gameList.length !== 0){
         setTimeout(function() {
             return submittedGame.innerHTML = randomGame;},
             500);
