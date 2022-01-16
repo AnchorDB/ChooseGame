@@ -24,7 +24,9 @@ function chooseGame() {
 
     // check if game has been entered
     if (gameList.length !== 0){
-        submittedGame.innerHTML = randomGame;
+        setTimeout(function() {
+            return submittedGame.innerHTML = randomGame;},
+            500);
     } else {
         submittedGame.innerHTML = "Please Enter a Game Above";
     }
@@ -35,3 +37,4 @@ function chooseGame() {
 function reloadList(){
     window.location.reload();
 }
+
